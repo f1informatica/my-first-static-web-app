@@ -14,7 +14,7 @@ module.exports = async function (context, req) {
     // };
 
     context.res.json({
-        text: "Página inicial da Empresa F1 Informática." 
+        text: "Bem vindo a pagina inicial da F1 Informática."
     });
 
 }
