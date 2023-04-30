@@ -1,3 +1,5 @@
+const { OperationCanceledException } = require("typescript");
+
 module.exports = async function (context, req) {
     // context.log('JavaScript HTTP trigger function processed a request.');
 
@@ -12,7 +14,7 @@ module.exports = async function (context, req) {
     // };
 
     context.res.json({
-        text: "Hello from the API"
+        text: "Página inicial da Empresa F1 Informática." 
     });
 
 }
