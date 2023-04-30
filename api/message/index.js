@@ -1,5 +1,3 @@
-const { OperationCanceledException } = require("typescript");
-
 module.exports = async function (context, req) {
     // context.log('JavaScript HTTP trigger function processed a request.');
 
@@ -14,7 +12,7 @@ module.exports = async function (context, req) {
     // };
 
     context.res.json({
-        text: "Bem vindo a pagina inicial da F1 Informática."
+        text: "Bem vindo a pagina inicial da F1 Informatica. Favor entrar em contato com ti@f1informatica.com.br"
     });
 
 }
