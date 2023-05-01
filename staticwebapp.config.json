@@ -6,10 +6,17 @@
       "methods": ["GET"]
     },
     {
+      "route": "/app/*",
+      "allowedRoles": ["administrator", "customers_contoso"]
+    },
+    {
       "route": "/logout",
       "redirect": "/.auth/logout"
     },
-  
+    {
+      "route": "/login",
+      "rewrite": "/.auth/login/aad"
+    },
     {
       "route": "/.auth/login/twitter",
       "statusCode": 404
@@ -17,7 +24,8 @@
   
   ],
   "navigationFallback": {
-        "rewrite": "/index.html"
+        "rewrite": "/index.html",
+        "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/app/*"]
     },
   "responseOverrides": {
       "401": {
