@@ -2,4 +2,37 @@
     "navigationFallback": {
         "rewrite": "/index.html"
     }
-}
+},
+
+{
+    "responseOverrides": {
+      "401": {
+        "redirect": "/.auth/login/github?post_login_redirect_uri=.referrer",
+        "statusCode": 302
+      }
+    }
+  },
+
+  {
+    "route": "/logout",
+    "redirect": "/.auth/logout"
+  },
+
+  {
+    "route": "/.auth/login/twitter",
+    "statusCode": 404
+  },
+
+  {
+    "route": "/leitointerativo",
+    "allowedRoles": ["authenticated, members"],
+    "headers": {
+        "Cache-Control": "no-store"
+    }
+},
+
+{
+    "route": "/api/*",
+    "methods": ["GET"]
+    //,"allowedRoles": ["registeredusers"]
+  },
