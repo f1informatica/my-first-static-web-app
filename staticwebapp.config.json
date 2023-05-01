@@ -7,7 +7,11 @@
     },
     {
       "route": "/app/*",
-      "allowedRoles": ["administrator", "customers_contoso"]
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/leito",
+      "redirect": "/app/leitointerativo/index.html"
     },
     {
       "route": "/logout",
