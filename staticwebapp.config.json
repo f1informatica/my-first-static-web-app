@@ -35,4 +35,4 @@
     "route": "/api/*",
     "methods": ["GET"]
     //,"allowedRoles": ["registeredusers"]
-  },
+}
