@@ -17,7 +17,8 @@ npm run swa:start
 ```
 
 > Note: This command will use the local configuration file `swa-cli.config.json`.
-> Note: Pode ser necessário usar o comando set NODE_OPTIONS=--openssl-legacy-provider, antes de npm start
+> 
+>  Pode ser necessário usar o comando set NODE_OPTIONS=--openssl-legacy-provider, antes de npm start
 
 ### Run unit tests
 
